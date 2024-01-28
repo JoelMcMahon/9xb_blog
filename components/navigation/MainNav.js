@@ -25,7 +25,7 @@ const MainNav = () => {
         <nav className="lg:mx-10 flex items-center justify-end flex-grow">
           <ul className="flex-grow items-center justify-center lg:flex hidden">
             <li className="p-4 mx-2 hover:bg-blue-50 rounded text-sm text-gray-500 cursor-pointer">
-              Most Recent
+              Top Posts
             </li>
             <li className="p-4 mx-2 hover:bg-blue-50 rounded text-sm text-gray-500 cursor-pointer">
               All Posts
@@ -54,7 +54,7 @@ const MainNav = () => {
       {showMenu && (
         <menu className="text-center absolute w-screen lg:hidden">
           <li className="py-5 bg-blue-50  hover:bg-blue-100 hover:text-sky-400 text-sm text-gray-500 cursor-pointer">
-            Most Recent
+            Top Posts
           </li>
           <li className="py-5 bg-blue-50   hover:bg-blue-100 hover:text-sky-400 text-sm text-gray-500 cursor-pointer">
             All Posts
