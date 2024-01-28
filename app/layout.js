@@ -13,7 +13,7 @@ const poppins = Poppins({
 const paytone = Paytone_One({
   subsets: ["latin"],
   display: "swap",
-  variable: "--paytone-one",
+  variable: "--font-paytone-one",
   weight: ["400"],
 });
 

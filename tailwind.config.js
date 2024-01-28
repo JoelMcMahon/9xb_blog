@@ -14,7 +14,7 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["var(--font-poppins)"],
-        paytone: ["var(--font-paytone)"],
+        paytone: ["var(--font-paytone-one)"],
       },
     },
   },
