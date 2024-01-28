@@ -53,12 +53,16 @@ const MainNav = () => {
       <div className="h-0.5 w-screen bg-gradient-to-l from-sky-300 to-blue-400"></div>
       {showMenu && (
         <menu className="text-center absolute w-screen lg:hidden z-50">
-          <li className="py-5 bg-blue-50  hover:bg-blue-100 hover:text-sky-400 text-sm text-gray-500 cursor-pointer">
-            Top Posts
-          </li>
-          <li className="py-5 bg-blue-50   hover:bg-blue-100 hover:text-sky-400 text-sm text-gray-500 cursor-pointer">
-            All Posts
-          </li>
+          <Link href={"/"}>
+            <li className="py-5 bg-blue-50  hover:bg-blue-100 hover:text-sky-400 text-sm text-gray-500 cursor-pointer">
+              Top Posts
+            </li>
+          </Link>
+          <Link href={"/posts"}>
+            <li className="py-5 bg-blue-50   hover:bg-blue-100 hover:text-sky-400 text-sm text-gray-500 cursor-pointer">
+              All Posts
+            </li>
+          </Link>
           <li className="py-5 bg-blue-50  hover:bg-blue-100 hover:text-sky-400 text-sm text-gray-500 cursor-pointer">
             About
           </li>

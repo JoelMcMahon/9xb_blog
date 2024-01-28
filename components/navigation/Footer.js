@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-800 h-72 w-screen flex flex-col">
+    <footer className="bg-slate-800 h-56 w-screen flex flex-col">
       <div className="w-full mt-auto my-5">
         <Link href="/" className="text-5xl flex items-center justify-center">
           <div className="flex items-center justify-center transform rotate-45">
