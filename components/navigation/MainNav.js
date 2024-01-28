@@ -25,10 +25,10 @@ const MainNav = () => {
         <nav className="lg:mx-10 flex items-center justify-end flex-grow">
           <ul className="flex-grow items-center justify-center lg:flex hidden">
             <li className="p-4 mx-2 hover:bg-blue-50 rounded text-sm text-gray-500 cursor-pointer">
-              Top Posts
+              <Link href="/">Top Posts</Link>
             </li>
             <li className="p-4 mx-2 hover:bg-blue-50 rounded text-sm text-gray-500 cursor-pointer">
-              All Posts
+              <Link href="/posts">All Posts</Link>
             </li>
             <li className="p-4 mx-2 hover:bg-blue-50 rounded text-sm text-gray-500 cursor-pointer">
               Categories
@@ -52,7 +52,7 @@ const MainNav = () => {
       </header>
       <div className="h-0.5 w-screen bg-gradient-to-l from-sky-300 to-blue-400"></div>
       {showMenu && (
-        <menu className="text-center absolute w-screen lg:hidden">
+        <menu className="text-center absolute w-screen lg:hidden z-50">
           <li className="py-5 bg-blue-50  hover:bg-blue-100 hover:text-sky-400 text-sm text-gray-500 cursor-pointer">
             Top Posts
           </li>

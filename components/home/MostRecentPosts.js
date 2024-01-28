@@ -13,12 +13,12 @@ const MostRecentPosts = async () => {
           <h2 className="my-2 font-paytone text-3xl lg:text-4xl">Top Posts</h2>
           <Link
             className="font-semibold text-lg text-blue-600  hover:text-sky-400"
-            href=""
+            href="/posts"
           >{`View All Posts >`}</Link>
         </div>
         <hr className="bg-blue-300 w-full my-3"></hr>
       </section>
-      <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="">
           <ArticleThumbail article={posts[0]} />
         </div>

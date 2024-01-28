@@ -2,6 +2,7 @@ import { Cutive_Mono, Inter, Paytone_One } from "next/font/google";
 import "./globals.css";
 import MainNav from "@/components/navigation/MainNav";
 import { Poppins } from "next/font/google";
+import Footer from "@/components/navigation/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
       <body className="">
         <MainNav />
         {children}
+        <Footer />
       </body>
     </html>
   );
