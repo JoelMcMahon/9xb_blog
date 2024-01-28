@@ -1,4 +1,4 @@
-import { Inter, Paytone_One } from "next/font/google";
+import { Cutive_Mono, Inter, Paytone_One } from "next/font/google";
 import "./globals.css";
 import MainNav from "@/components/navigation/MainNav";
 import { Poppins } from "next/font/google";
@@ -17,6 +17,13 @@ const paytone = Paytone_One({
   weight: ["400"],
 });
 
+const cutive = Cutive_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-cutive-mono",
+  weight: ["400"],
+});
+
 export const metadata = {
   title: "This Blog",
   description: "It's a blog!",
@@ -24,7 +31,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${poppins.variable} ${paytone.variable}`}>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${paytone.variable} ${cutive.variable}`}
+    >
       <body className="">
         <MainNav />
         {children}

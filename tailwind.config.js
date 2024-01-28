@@ -15,6 +15,7 @@ module.exports = {
       fontFamily: {
         poppins: ["var(--font-poppins)"],
         paytone: ["var(--font-paytone-one)"],
+        cutive: ["var(--font-cutive-mono)"],
       },
     },
   },

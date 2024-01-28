@@ -1,6 +1,7 @@
 import { getRecentPosts } from "@/lib/getRecentPosts";
 import Link from "next/link";
 import React from "react";
+import ArticleThumbail from "../articles/ArticleThumbail";
 
 const MostRecentPosts = async () => {
   const posts = await getRecentPosts();
@@ -17,12 +18,13 @@ const MostRecentPosts = async () => {
         </div>
         <hr className="bg-blue-300 w-full my-3"></hr>
       </section>
-      <div className="grid grid-rows-2 grid-cols-2 grid-flow-col gap-4">
-        <div className="row-span-2 bg-red-400">
-          <div className="h-96"></div>
+      <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="">
+          <ArticleThumbail article={posts[0]} />
         </div>
-        <div className="row-span-1 ">02</div>
-        <div className="row-span-1 ">03</div>
+        <div className="">
+          <ArticleThumbail article={posts[2]} />
+        </div>
       </div>
     </>
   );
