@@ -24,20 +24,20 @@ const MainNav = () => {
         </Link>
         <nav className="lg:mx-10 flex items-center justify-end flex-grow">
           <ul className="flex-grow items-center justify-center lg:flex hidden">
-            <li className="p-4 mx-2 hover:bg-indigo-50 rounded text-sm text-gray-500 cursor-pointer">
+            <li className="p-4 mx-2 hover:bg-blue-50 rounded text-sm text-gray-500 cursor-pointer">
               Most Recent
             </li>
-            <li className="p-4 mx-2 hover:bg-indigo-50 rounded text-sm text-gray-500 cursor-pointer">
+            <li className="p-4 mx-2 hover:bg-blue-50 rounded text-sm text-gray-500 cursor-pointer">
               All Posts
             </li>
-            <li className="p-4 mx-2 hover:bg-indigo-50 rounded text-sm text-gray-500 cursor-pointer">
+            <li className="p-4 mx-2 hover:bg-blue-50 rounded text-sm text-gray-500 cursor-pointer">
               Categories
             </li>
-            <li className="p-4 mx-2 hover:bg-indigo-50 rounded text-sm text-gray-500 cursor-pointer">
+            <li className="p-4 mx-2 hover:bg-blue-50 rounded text-sm text-gray-500 cursor-pointer">
               About
             </li>
           </ul>
-          <button className="p-4 mx-2 hover:bg-indigo-50 rounded text-sm text-gray-500 cursor-pointer hidden lg:inline-block">
+          <button className="p-4 mx-2 hover:bg-blue-50 rounded text-sm text-gray-500 cursor-pointer hidden lg:inline-block">
             Sign Up
           </button>
           <button className="px-8 py-3 mx-2 bg-blue-500  hover:bg-sky-400 rounded font-semibold text-white cursor-pointer hidden lg:inline-block">
@@ -53,16 +53,16 @@ const MainNav = () => {
       <div className="h-0.5 w-screen bg-gradient-to-l from-sky-300 to-blue-400"></div>
       {showMenu && (
         <menu className="text-center absolute w-screen lg:hidden">
-          <li className="py-5 bg-indigo-50  hover:bg-indigo-100 hover:text-sky-400 text-sm text-gray-500 cursor-pointer">
+          <li className="py-5 bg-blue-50  hover:bg-blue-100 hover:text-sky-400 text-sm text-gray-500 cursor-pointer">
             Most Recent
           </li>
-          <li className="py-5 bg-indigo-50   hover:bg-indigo-100 hover:text-sky-400 text-sm text-gray-500 cursor-pointer">
+          <li className="py-5 bg-blue-50   hover:bg-blue-100 hover:text-sky-400 text-sm text-gray-500 cursor-pointer">
             All Posts
           </li>
-          <li className="py-5 bg-indigo-50  hover:bg-indigo-100 hover:text-sky-400 text-sm text-gray-500 cursor-pointer">
+          <li className="py-5 bg-blue-50  hover:bg-blue-100 hover:text-sky-400 text-sm text-gray-500 cursor-pointer">
             About
           </li>
-          <li className="py-5 bg-indigo-50  hover:bg-indigo-100 hover:text-sky-400 text-sm text-gray-500 cursor-pointer">
+          <li className="py-5 bg-blue-50  hover:bg-blue-100 hover:text-sky-400 text-sm text-gray-500 cursor-pointer">
             Sign Up/Log In
           </li>
         </menu>
