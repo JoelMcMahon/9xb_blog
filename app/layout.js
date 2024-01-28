@@ -1,17 +1,34 @@
-import { Inter } from "next/font/google";
+import { Inter, Paytone_One } from "next/font/google";
 import "./globals.css";
+import MainNav from "@/components/navigation/MainNav";
+import { Poppins } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+const paytone = Paytone_One({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--paytone-one",
+  weight: ["400"],
+});
 
 export const metadata = {
-  title: "Blog",
+  title: "This Blog",
   description: "It's a blog!",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`${poppins.variable} ${paytone.variable}`}>
+      <body className="">
+        <MainNav />
+        {children}
+      </body>
     </html>
   );
 }
