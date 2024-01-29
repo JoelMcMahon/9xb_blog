@@ -24,12 +24,16 @@ const MainNav = () => {
         </Link>
         <nav className="lg:mx-10 flex items-center justify-end flex-grow">
           <ul className="flex-grow items-center justify-center lg:flex hidden">
-            <li className="p-4 mx-2 hover:bg-blue-50 rounded text-sm text-gray-500 cursor-pointer">
-              <Link href="/">Top Posts</Link>
-            </li>
-            <li className="p-4 mx-2 hover:bg-blue-50 rounded text-sm text-gray-500 cursor-pointer">
-              <Link href="/posts">All Posts</Link>
-            </li>
+            <Link href="/">
+              <li className="p-4 mx-2 hover:bg-blue-50 rounded text-sm text-gray-500 cursor-pointer">
+                Top Posts
+              </li>
+            </Link>
+            <Link href="/posts">
+              <li className="p-4 mx-2 hover:bg-blue-50 rounded text-sm text-gray-500 cursor-pointer">
+                All Posts
+              </li>
+            </Link>
             <li className="p-4 mx-2 hover:bg-blue-50 rounded text-sm text-gray-500 cursor-pointer">
               Categories
             </li>
