@@ -7,7 +7,7 @@ const PostDetails = async ({ params }) => {
   const post = await getPostById(params.id);
   return (
     <main className="py-8 px-5 md:px-10 2xl:px-32 flex min-h-screen flex-col text-center items-center">
-      <h2 className="m-8 px-40 font-paytone text-5xl lg:text-6xl ">
+      <h2 className="m-8 px:20 xl:px-40 font-paytone text-5xl lg:text-6xl ">
         {post.title}
       </h2>
       <Image

@@ -13,14 +13,14 @@ const MainNav = () => {
 
   return (
     <>
-      <header className="py-8 px-5 md:px-10 2xl:px-32 flex font-poppins items-center border-b">
+      <header className="py-4 lg:py-8 px-5 md:px-10 2xl:px-32 flex font-poppins items-center border-b">
         <Link href="/" className="text-5xl flex items-center justify-center">
           <div className="flex items-center justify-center transform rotate-45">
             <div className="h-5 w-2 bg-gradient-to-r from-sky-400 to-blue-500  m-0.5 rounded-tr rounded-bl"></div>
             <div className="h-8 w-2 bg-gradient-to-r from-sky-400 to-blue-500  m-0.5 rounded-tr rounded-bl"></div>
             <div className="h-5 w-2 bg-gradient-to-r from-sky-400 to-blue-500  m-0.5 rounded-tr rounded-bl"></div>
           </div>
-          <p className="m-2 text-3xl font-">This Blog</p>
+          <p className="m-2 text-2xl lg:text-3xl font-">This Blog</p>
         </Link>
         <nav className="lg:mx-10 flex items-center justify-end flex-grow">
           <ul className="flex-grow items-center justify-center lg:flex hidden">
